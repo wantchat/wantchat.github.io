@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>旺旺密聊</title>
+		<meta name="keywords"
+			content="旺旺密聊官网,旺旺密聊app,旺旺密聊app下载,旺旺密聊app苹果下载,旺旺密聊appios下载,旺旺密聊app安卓下载,旺旺密聊app聊天软件,安全聊天软件,加密聊天软件,安全聊天app,加密聊天app">
+		<meta name="description" id="dspn"
+			content="旺旺密聊app聊天APP是一款端对端加密聊天软件，主要保护个人信息、隐私、通讯安全。软件对用户信息采用了RSA和SRP加密保护，消息和文件采用了非对称加密和双棘轮加密机制。端对端传输，消息不经过服务器全方位保护你的网络安全。">
+		<!-- 应用名称与公司名称 -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"> </script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			text-decoration: none;
+		}
+
+		html,
+		body {}
+
+		.about-head img {
+			width: 80px;
+			height: 80px;
+			margin-right: 12px;
+		}
+
+
+		.swiper {
+			position: relative;
+			width: 100% !important;
+			height: auto !important;
+		}
+
+		.swiper .swiper-slide img {
+			width: 100%;
+			height: auto;
+			float: left;
+		}
+
+		.tese {
+			padding: 40px;
+			display: flex;
+			flex-direction: column;
+			background-color: #fff;
+		}
+
+		.tese h1 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.teselist {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.teselist-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 400px;
+			margin: 24px;
+		}
+
+		.teselist-item img {
+			width: 120px;
+			height: 120px;
+		}
+
+		.teselist-item h2 {
+			font-size: 22px;
+			margin: 20px;
+		}
+
+		.teselist-item p {
+			text-align: center;
+			font-size: 16px;
+		}
+
+		.about-box {
+			box-sizing: border-box;
+			padding: 40px;
+			min-height: 100vh;
+			color: #fff;
+			background-image: linear-gradient(135deg, #052787 10%, #42C1FF 100%);
+			display: flex;
+			flex-direction: column;
+		}
+
+		.about-head {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 30px;
+			align-items: center;
+		}
+
+		.about-head h1 {}
+
+		.about {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.about-left {
+			max-width: 600px;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.about-left h2 {
+			margin-bottom: 12px;
+		}
+
+		.about-left p {
+			font-size: 20px;
+			line-height: 2;
+			margin-bottom: 24px;
+		}
+
+		.download {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.download a {
+			border-radius: 6px;
+			display: inline-block;
+			background-color: #fff;
+			color: #4071fa;
+			padding: 12px;
+			box-sizing: border-box;
+			text-align: center;
+			margin-right: 10px;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		.phoneSwiperBox {
+			position: relative;
+		}
+
+		.phoneSwiperBox-filter {
+			position: relative;
+			width: auto;
+			/* height: 410px; */
+			z-index: 2;
+			max-width: 100%;
+		}
+
+		.container-app-swiper {
+			z-index: 3;
+			width: 45.7%;
+			height: 83%;
+			position: absolute;
+			top: 4.35%;
+			left: 41.6%;
+			background-color: #ffffff;
+			overflow: hidden;
+			border-radius: 22px;
+		}
+
+		.swiper2 {
+			height: 100%;
+		}
+
+		.swiper2 .swiper-slide img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.imgbg {
+			width: 100%;
+			height: 200px;
+			background-image: url(./img/bg2.jpg);
+			background-size: 100% 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+		}
+
+		.imgbg h1 {
+			font-size: 28px;
+		}
+
+		.imgbg p {
+			margin-top: 12px;
+		}
+
+		.footer {
+			padding: 12px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			background-color: #111;
+			color: #fff;
+		}
+
+		.footer p {
+			line-height: 1.5;
+			text-align: center;
+		}
+
+		.footer a {
+			color: #fff;
+		}
+
+		@media screen and (max-width:750px) {
+			.about-head img {
+				width: 60px;
+				height: 60px;
+			}
+
+			.about-head h1 {
+				font-size: 20px;
+			}
+
+			.download {
+				justify-content: center;
+			}
+			.download a{
+				font-size: 14px;
+			}
+			.about-box,
+			.tese {
+				padding: 40px 10px;
+			}
+		}
+	</style>
+
+	<body>
+		<div class="box">
+			<!-- 关于 -->
+			<div class="about-box">
+				<div class="about-head">
+					<img style="border-radius: 20px;" src="./img/logo.png" alt="">
+					<h1>旺旺密聊-加密聊天软件</h1>
+				</div>
+				<div class="about">
+					<div class="about-left">
+						<h2>ABOUT US</h2>
+						<p>旺旺密聊 APP是一款端对端加密聊天软件，主要保护个人信息、隐私、通讯安全。</p>
+						<p>软件对用户信息采用了RSA和SRP加密保护，消息和文件采用了非对称加密和双棘轮加密机制。端对端传输，消息不经过服务器全方位保护你的网络安全。</p>
+						<!-- 下载地址 -->
+						<div class="download">
+							<a target="_blank" href="https://www.17wg4r.top/AQTc">安卓下载</a>
+							<a target="_blank" href="https://www.17wg4r.top/AQTc">ios下载</a>
+							<a target="_blank" href="/app/app.exe">Windows下载</a>
+						</div>
+					</div>
+					<div class="about-right">
+						<div class="phoneSwiperBox">
+							<img class="phoneSwiperBox-filter" src="./img/bg.png">
+							<div class="container-app-swiper">
+								<div class="swiper2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<img src="./img/msg1.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 特色 -->
+			<div class="tese">
+				<h1>我们的特色</h1>
+				<div class="teselist">
+					<div class="teselist-item">
+						<img src="./img/2.png">
+						<h2>消息加密</h2>
+						<p>多重加密机制。端对端传输，全方位保护你的网络安全。</p>
+					</div>
+					<div class="teselist-item">
+						<img src="./img/1.png">
+						<h2>纯净简约</h2>
+						<p>纯净无广告，随时随地与好友畅聊，聊天本该如此简单。</p>
+					</div>
+				</div>
+			</div>
+			<!-- 底部背景 -->
+			<div class="imgbg">
+				<h1>旺旺密聊-加密聊天软件</h1>
+			</div>
+			<!-- 底部 -->
+			<div class="footer">
+				<p>旺旺密聊© 2018 - <span id="entime">2022</span></p>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	var mySwiper = new Swiper('.swiper2', {
+		autoplay: false, //可选选项，自动滑动
+		loop: true,
+	})
+	let year = new Date().getFullYear()
+	document.getElementById('entime').innerHTML = year
+</script>
